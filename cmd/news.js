@@ -14,6 +14,7 @@ exports.run = (bot, msg, params) => {
     .setTitle("**اخبار جدید**")
     .setDescription(params.join(" "))
     .setFooter("G R Ξ Ξ N H I L L S")
+    .setColor('RANDOM')
  
 
 

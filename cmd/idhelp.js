@@ -7,6 +7,8 @@ exports.run = (bot, msg, params) => {
        .addField("Use this Codes :")
        .addField("jcid - Channel ID")
        .addField("jsid - Server ID")
+       .setFooter("G R Ξ Ξ N H I L L S")
+       .setColor('RANDOM')
 
 
 

@@ -9,10 +9,10 @@ exports.run = (bot, msg, params) => {
       .addField("**" + "Make a vote" + "**", " g.vote", false)
       .addField("**" + "Reminder" + "**", "g.timer", false)
       .addField("**" + "User Info" + "**", " g.userinfo", false)
-      .addField("**" + "Aparat Account Info" + "**", " g.aparat", false)
-      
-		  
-       .setColor("0x#295d7f")
+      .addField("**" + "Highlighter" + "**", " :rotating_light: g.highlight", false)
+      .addField("**" + "Aparat Account Info" + "**", " g.aparat", false)  
+	    .setFooter("G R Ξ Ξ N H I L L S")
+      .setColor("RANDOM")
 
   msg.channel.send({embed: invite});
 

@@ -11,10 +11,9 @@ exports.run = (bot, msg, params) => {
 		  .addField("**" + "User Info :desktop: : " + "**", "g.userinfo", false)
 		  .addField("**" + "Reminder :clock: : " + "**", "g.timer", false)
 		  .addField("**" + "User's Avatar :motorway: : " + "**", "g.avatar", false)
-		  .addField("**" + "WaitWut Temrs Of Service :scales: : " + "**", "g.rules", false)
-		  .addField("**" + "About WaitWut :robot: : " + "**", "g.about", false)
-		  
-          .setColor("0x#295d7f")
+		  .addField("**" + "About Bot :robot: : " + "**", "g.about", false)
+      .setColor('RANDOM')
+      .setFooter("G R Ξ Ξ N H I L L S")
 
   msg.channel.send({embed: invite});
 

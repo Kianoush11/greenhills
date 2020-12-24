@@ -6,7 +6,8 @@ exports.run = (bot, msg, params) => {
         .setFooter("More ID Commands - g.id")
         .setDescription("Name : " + msg.guild.name, true)
         .addField("ID : " + msg.guild.id, true)
-        .setColor("0x#FF8796")
+        .setColor('RANDOM')
+        .setFooter("G R Ξ Ξ N H I L L S")
 
 
 

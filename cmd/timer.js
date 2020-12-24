@@ -12,7 +12,7 @@ exports.run = (bot, msg, params) => {
     return msg.channel.send(":x:" + " | Error : Please use command like this :jtimer [1s/1m/1h/1d]");
   }
 
-  msg.channel.send("<:tick:760567074673917974>" + " | Timer is now  set to : " + `${ms(ms(Timer), {long: true})}`)
+  msg.channel.send("Timer is now  set to : " + `${ms(ms(Timer), {long: true})}`)
 
   setTimeout(function(){
     msg.channel.send(msg.author.toString() + `:clock:  Ding Ding !: ${ms(ms(Timer), {long: true})}`)

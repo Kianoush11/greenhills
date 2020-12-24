@@ -7,10 +7,10 @@ exports.run = (bot, msg, params) => {
       .setTitle("**Sir,How i can help you?**")
       .addField("**" + " Fun & Meme :laughing: " + "**", "  g.fun", true)
       .addField("**" + " Tools :tools: " + "**", " g.tools", false)
-      .addField("**" + "Moderation :closed_lock_with_key:" + "**", "g.mod", false)
+      .addField("**" + " Moderation :closed_lock_with_key:" + "**", "g.mod", false)
 		  .addField("**" + " WaitWut <:normal:779270062087077908> " + "**", " g.wat ", false)
-		  
-       .setColor("0x#295d7f")
+		  .setFooter("G R Ξ Ξ N H I L L S")
+      .setColor("0x#295d7f")
 
   msg.channel.send({embed: invite});
 

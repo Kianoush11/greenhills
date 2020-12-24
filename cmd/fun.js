@@ -5,12 +5,15 @@ exports.run = (bot, msg, params) => {
   var invite = new Discord.RichEmbed()
 
           .setTitle("**WaitWut**", true)
-          .addField("**" + "Talking by bot <a:737627724411043851:740144265228845057> : " + "**", " <a:737628504040144936:740130327371972658> $speak", false)
-        .addField("**" + "شیر یا خط <a:436677458339823636:740135780575477871> : " + "**", " <a:737628504040144936:740130327371972658> $coin", false)
-		    .addField("**" + "Your Love to that thing <a:665626030345551891:739840005119279126> : " + "**", " <a:737628504040144936:740130327371972658> $love", false)
-		    .addField("**" + "Your Rank :page_facing_up: : " + "**", " <a:737628504040144936:740130327371972658> $rank", false)
-		    .addField("**" + "Your Rank with details :bookmark_tabs: : " + "**", " <a:737628504040144936:740130327371972658> $rank -d", false)
-		  
+          .addField("**" + "Talking by bot : " + "**", " :open_mouth: g.speak", false)
+          .addField("**" + "Shir ya Khat : " + "**", " :coin: g.coin", false)
+          .addField("**" + "Dice : " + "**", " :six: g.dice", false)
+          .addField("**" + "Cat Photos :" + "**", " :cat: g.cat", false)
+          .addField("**" + "Dog Photos :" + "**", " :dog: g.dog", false)
+          .addField("**" + "Wallpapers :" + "**", " :cat: g.wallpaper", false)
+          .addField("**" + "Your Love to that thing : " + "**", " :heart: g.love", false)
+          .setColor('RANDOM')
+          .setFooter("G R Ξ Ξ N H I L L S")
           
 
   msg.channel.send({embed: invite});
@@ -25,7 +28,7 @@ exports.conf = {
 };
 
 exports.help = {
-  name: "fff",
+  name: "fun",
   description: "Bot Info",
   usage: "abouttttt"
 };

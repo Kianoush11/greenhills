@@ -9,9 +9,8 @@ exports.run = (bot, msg, params) => {
           .addField("__**" + "Code Language : " + "**__", "Javascript <:java:785151723207393300>", false)
           .addField("__**" + "Version : " + "**__", " 1.0 :robot: ", false)
 		      .addField("__**" + "Bot Status :" + "**__", "Online <:frozen:780376909451624468> ", true)
-          .addField("__**" + "Support Server" + "**__", "http://discord.gg/uq99q2A4xF :envelope: ", true)
-        
-          .setColor("0x#FF0000")
+          .setFooter("G R Ξ Ξ N H I L L S")
+          .setColor('RANDOM')
 
   msg.channel.send({embed: invite});
 

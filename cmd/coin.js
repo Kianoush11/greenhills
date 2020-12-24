@@ -1,6 +1,6 @@
 var hd = [
-  "شیر",
-  "خط"
+  " شیر ",
+  " خط "
 ];
 
 exports.run = (bot, msg, params) => {
