@@ -258,15 +258,6 @@ bot.on("ready", () => {
   //ACTIVE
   log(`Ready to serve ${bot.users.size} users, in ${bot.channels.size} channels of ${bot.guilds.size} servers.`);
   bot.user.setActivity("G R Ξ Ξ N H I L L S", { type: "WATCHING"});
-  const channel = bot.channels.cache.get("792060128320290826");
-  if (!channel) return console.error("The channel does not exist!");
-  channel.join().then(connection => {
-      // Yay, it worked!
-      console.log("Successfully connected.");
-  }).catch(e => {
-
-      // Oh no, it errored! Let's log it to console :)
-      console.error(e);
   log("GreenHills Bot by Kavisho is Running");
 });
 
