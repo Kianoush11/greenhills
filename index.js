@@ -34,7 +34,7 @@ bot.on("guildMemberAdd", member => {
  .addField('سلام! حتما قوانین مارو بخون', member.nickname)
  .setImage(member.user.avatarURL)
 
- member.guild.channels.get('787718236799893521').send(embre);
+ member.guild.channels.get('787718236799893521').send({embed: embre});
 
 });
 
@@ -244,6 +244,19 @@ if (message.content.startsWith('g.ban')) {
 
   }
 
+});
+
+bot.on("ready", () => {
+  const channel = bot.channels.cache.get("792060128320290826");
+  if (!channel) return console.error("The channel does not exist!");
+  channel.join().then(connection => {
+      // Yay, it worked!
+      console.log("Successfully connected.");
+  }).catch(e => {
+
+      // Oh no, it errored! Let's log it to console :)
+      console.error(e);
+  });
 });
 
 bot.on('message', message => {
