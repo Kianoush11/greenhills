@@ -10,6 +10,7 @@ exports.run = (bot, msg, params) => {
           .addField("**" + "Dice : " + "**", " :six: g.dice", false)
           .addField("**" + "Cat Photos :" + "**", " :cat: g.cat", false)
           .addField("**" + "Dog Photos :" + "**", " :dog: g.dog", false)
+          .addField("**" + "Gift Generator :" + "**", " :gift: g.gen", false)
           .addField("**" + "Wallpapers :" + "**", " :cat: g.wallpaper", false)
           .addField("**" + "Your Love to that thing : " + "**", " :heart: g.love", false)
           .setColor('RANDOM')
