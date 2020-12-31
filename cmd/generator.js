@@ -83,6 +83,7 @@ const generator = [
 
   
       msg.author.send(emx);
+      msg.react("✅");
   
   };
   
