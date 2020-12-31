@@ -86,7 +86,7 @@ const generator = [
   .setTitle("**G R Ξ Ξ N G Ξ N Ξ R A T O R**", true)
   .setDescription(generator[Math.floor(Math.random() * generator.length)])
   .setFooter("G R Ξ Ξ N H I L L S | در صورت برنده شدن به اونر در چت پیغام دهید")
-  .setColor('RANDOM')
+  .setColor('RANDOM') 
 
   msg.author.send(emx);
   
