@@ -71,20 +71,34 @@ const generator = [
     "پوچ",
     "پوچ",
   ];
-  
+   
+  const talkedRecently = new Set();
+
+
+
   exports.run = (bot, msg, params) => {
 
-      var emx = new Discord.RichEmbed()
-      .setTitle("**G R Ξ Ξ N G Ξ N Ξ R A T O R**", true)
-      .setDescription(generator[Math.floor(Math.random() * generator.length)])
-      .setFooter("G R Ξ Ξ N H I L L S | در صورت برنده شدن به اونر در چت پیغام دهید")
-      .setColor('RANDOM')
+      if (talkedRecently.has(msg.author.id)) {
+        msg.channel.send("Wait 1 minute before getting typing this again. - " + msg.author);
+} else {
 
+  var emx = new Discord.RichEmbed()
+  .setTitle("**G R Ξ Ξ N G Ξ N Ξ R A T O R**", true)
+  .setDescription(generator[Math.floor(Math.random() * generator.length)])
+  .setFooter("G R Ξ Ξ N H I L L S | در صورت برنده شدن به اونر در چت پیغام دهید")
+  .setColor('RANDOM')
 
+  msg.author.send(emx);
   
-      msg.author.send(emx);
-      msg.react("✅");
-  
+
+    // Adds the user to the set so that they can't talk for a minute
+    talkedRecently.add(msg.author.id);
+    setTimeout(() => {
+      // Removes the user from the set after a minute
+      talkedRecently.delete(msg.author.id);
+    }, 60000);
+}
+
   };
   
   exports.conf = {
