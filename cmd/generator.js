@@ -1,7 +1,7 @@
 const Discord = require('discord.js')
 
 
-var generator = [
+const generator = [
     "پوچ",
     "پوچ", 
     "پوچ",
@@ -50,6 +50,16 @@ var generator = [
     "پوچ",
     "پوچ",
     "پوچ",
+    "پوچ",
+    "پوچ",
+    "پوچ",
+    "پوچ",
+    "پوچ",
+    "پوچ",
+    "پوچ",
+    "پوچ",
+    "پوچ",
+    "پوچ",
     "پوچ", 
     "پوچ",
     "پوچ",
@@ -64,7 +74,7 @@ var generator = [
   
   exports.run = (bot, msg, params) => {
 
-      var emx = new Discord.MessageEmbed()
+      var emx = new Discord.RichEmbed()
       .setTitle("**G R Ξ Ξ N G Ξ N Ξ R A T O R**", true)
       .setDescription(generator[Math.floor(Math.random() * generator.length)])
       .setFooter("G R Ξ Ξ N H I L L S | در صورت برنده شدن به اونر در چت پیغام دهید")
@@ -72,7 +82,7 @@ var generator = [
 
 
   
-      msg.channel.send({embed: emx});
+      msg.author.send(emx);
   
   };
   
