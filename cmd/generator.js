@@ -79,7 +79,7 @@ const generator = [
   exports.run = (bot, msg, params) => {
 
       if (talkedRecently.has(msg.author.id)) {
-        msg.channel.send("Wait 1 minute before getting typing this again. - " + msg.author);
+        msg.channel.send("یوزر گرامی لطفا 5 دقیقه عد دوباره تلاش کنید - " + msg.author);
 } else {
 
   var emx = new Discord.RichEmbed()
@@ -96,7 +96,7 @@ const generator = [
     setTimeout(() => {
       // Removes the user from the set after a minute
       talkedRecently.delete(msg.author.id);
-    }, 60000);
+    }, 300000);
 }
 
   };
