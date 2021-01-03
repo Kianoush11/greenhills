@@ -26,21 +26,10 @@ fs.readdir("./cmd/", (err, files) => {
   });
 });
 
-bot.on("guildMemberAdd", member => {
-
- const embre = new Discord.RichEmbed()
- .setColor('RANDOM')
- .setTitle('Welcome To G R Ξ Ξ N H I L L S !')
- .addField('سلام! حتما قوانین مارو بخون', member.nickname)
- .setImage(member.user.avatarURL)
-
- member.guild.channels.get('787718236799893521').send({embed: embre});
-
-});
 
 bot.on("message", msg => {
 
-  var prefix = ("g.");
+  var prefix = (process.env.prefix);
 
   if (msg.author.bot) return;
   if (!msg.content.startsWith(prefix)) return;
@@ -257,7 +246,7 @@ bot.on('message', message => {
 bot.on("ready", () => {
   //ACTIVE
   log(`Ready to serve ${bot.users.size} users, in ${bot.channels.size} channels of ${bot.guilds.size} servers.`);
-  bot.user.setActivity("G R Ξ Ξ N H I L L S", { type: "WATCHING"});
+  bot.user.setActivity(process.env.active, { type: "WATCHING"});
   log("GreenHills Bot by Kavisho is Running");
 });
 
