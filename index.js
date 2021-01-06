@@ -29,7 +29,7 @@ fs.readdir("./cmd/", (err, files) => {
 
 bot.on("message", msg => {
 
-  var prefix = (process.env.prefix);
+  var prefix = ("g.");
 
   if (msg.author.bot) return;
   if (!msg.content.startsWith(prefix)) return;
@@ -246,7 +246,7 @@ bot.on('message', message => {
 bot.on("ready", () => {
   //ACTIVE
   log(`Ready to serve ${bot.users.size} users, in ${bot.channels.size} channels of ${bot.guilds.size} servers.`);
-  bot.user.setActivity(process.env.active, { type: "WATCHING"});
+  bot.user.setActivity("Configuring", { type: "WATCHING"});
   log("GreenHills Bot by Kavisho is Running");
 });
 
