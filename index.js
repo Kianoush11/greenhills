@@ -246,7 +246,7 @@ bot.on('message', message => {
 bot.on("ready", () => {
   //ACTIVE
   log(`Ready to serve ${bot.users.size} users, in ${bot.channels.size} channels of ${bot.guilds.size} servers.`);
-  bot.user.setActivity("to changes", { type: "LISTENING"});
+  bot.user.setActivity("Changes", { type: "LISTENING"});
   log("GreenHills Bot by Kavisho is Running");
 });
 
